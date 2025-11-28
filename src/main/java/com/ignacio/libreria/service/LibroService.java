@@ -28,7 +28,6 @@ public class LibroService {
 
     // Crear nuevo libro
     public Libro crearLibro(Libro libro) {
-        // Aquí puedes agregar validaciones de negocio
         validarLibro(libro);
         return libroRepository.save(libro);
     }
